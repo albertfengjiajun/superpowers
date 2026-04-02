@@ -33,22 +33,22 @@
 **Files:**
 - Create: `scripts/antigravity/install-skills.ps1`
 
-- [ ] **Step 1: 创建目标目录骨架**
-- [ ] **Step 2: 增加动态 skill discovery**
-- [ ] **Step 3: 增加安全的扁平化 junction 创建逻辑**
-- [ ] **Step 4: 增加最终 summary 输出**
-- [ ] **Step 5: 在本地环境运行 installer 并验证输出**
+- [x] **Step 1: 创建目标目录骨架**
+- [x] **Step 2: 增加动态 skill discovery**
+- [x] **Step 3: 增加安全的扁平化 junction 创建逻辑**
+- [x] **Step 4: 增加最终 summary 输出**
+- [x] **Step 5: 在本地环境运行 installer 并验证输出**
 
 ### Task 2: 创建 Unix skill installer
 
 **Files:**
 - Create: `scripts/antigravity/install-skills.sh`
 
-- [ ] **Step 1: 创建 script header**
-- [ ] **Step 2: 增加动态 skill discovery**
-- [ ] **Step 3: 增加 symlink 创建逻辑**
-- [ ] **Step 4: 增加 summary 输出并设置 executable bit**
-- [ ] **Step 5: 运行 installer 并验证输出**
+- [x] **Step 1: 创建 script header**
+- [x] **Step 2: 增加动态 skill discovery**
+- [x] **Step 3: 增加 symlink 创建逻辑**
+- [x] **Step 4: 增加 summary 输出并设置 executable bit**
+- [x] **Step 5: 运行 installer 并验证输出**
 
 ### Task 3: 创建 cleanup scripts
 
@@ -56,52 +56,52 @@
 - Create: `scripts/antigravity/remove-skills.ps1`
 - Create: `scripts/antigravity/remove-skills.sh`
 
-- [ ] **Step 1: 创建 PowerShell cleanup script**
-- [ ] **Step 2: 创建 Unix cleanup script**
-- [ ] **Step 3: 设置 Unix cleanup script 为 executable**
-- [ ] **Step 4: 验证两个 cleanup scripts 无 parse error**
+- [x] **Step 1: 创建 PowerShell cleanup script**
+- [x] **Step 2: 创建 Unix cleanup script**
+- [x] **Step 3: 设置 Unix cleanup script 为 executable**
+- [x] **Step 4: 验证两个 cleanup scripts 无 parse error**
 
 ### Task 4: 新增 `/superpowers-design`
 
 **Files:**
 - Create: `.agent/workflows/superpowers-design.md`
 
-- [ ] **Step 1: 创建 workflow 文件，明确使用 `brainstorming`**
-- [ ] **Step 2: 验证 frontmatter、描述和跳转语义**
+- [x] **Step 1: 创建 workflow 文件，明确使用 `brainstorming`**
+- [x] **Step 2: 验证 frontmatter、描述和跳转语义**
 
 ### Task 5: 新增 `/superpowers-plan`
 
 **Files:**
 - Create: `.agent/workflows/superpowers-plan.md`
 
-- [ ] **Step 1: 创建 workflow 文件，明确使用 `writing-plans`**
-- [ ] **Step 2: 验证 design context 缺失时会跳转到 `/superpowers-design`**
+- [x] **Step 1: 创建 workflow 文件，明确使用 `writing-plans`**
+- [x] **Step 2: 验证 design context 缺失时会跳转到 `/superpowers-design`**
 
 ### Task 6: 新增 `/superpowers-execute`
 
 **Files:**
 - Create: `.agent/workflows/superpowers-execute.md`
 
-- [ ] **Step 1: 创建 workflow 文件，默认使用 `subagent-driven-development`，inline fallback 为 `executing-plans`**
-- [ ] **Step 2: 验证缺少 implementation plan 时会跳转到 `/superpowers-plan`**
+- [x] **Step 1: 创建 workflow 文件，默认使用 `subagent-driven-development`，inline fallback 为 `executing-plans`**
+- [x] **Step 2: 验证缺少 implementation plan 时会跳转到 `/superpowers-plan`**
 
 ### Task 7: 新增 `/superpowers-finish`
 
 **Files:**
 - Create: `.agent/workflows/superpowers-finish.md`
 
-- [ ] **Step 1: 创建 workflow 文件，明确使用 `finishing-a-development-branch`**
-- [ ] **Step 2: 验证未完成工作会回跳到 `/superpowers-execute`**
+- [x] **Step 1: 创建 workflow 文件，明确使用 `finishing-a-development-branch`**
+- [x] **Step 2: 验证未完成工作会回跳到 `/superpowers-execute`**
 
 ### Task 8: 新增 Antigravity 文档
 
 **Files:**
 - Create: `docs/README.antigravity.md`
 
-- [ ] **Step 1: 写入文档头与 install model**
-- [ ] **Step 2: 补充 Windows / macOS / Linux installation instructions**
-- [ ] **Step 3: 补充 nested install 失效的 troubleshooting，以及 v1 不使用 rules 的说明**
-- [ ] **Step 4: 验证 markdown code fences 平衡**
+- [x] **Step 1: 写入文档头与 install model**
+- [x] **Step 2: 补充 Windows / macOS / Linux installation instructions**
+- [x] **Step 3: 补充 nested install 失效的 troubleshooting，以及 v1 不使用 rules 的说明**
+- [x] **Step 4: 验证 markdown code fences 平衡**
 
 ### Task 9: 做最终验证
 
@@ -111,7 +111,7 @@
 - Read: `.agent/workflows/superpowers-*.md`
 - Read: `docs/README.antigravity.md`
 
-- [ ] **Step 1: 验证 Antigravity workflow 文件存在**
-- [ ] **Step 2: 验证 Windows installer 生成的是一级全局 skill 目录**
-- [ ] **Step 3: 验证没有新增 `.agent/rules`**
-- [ ] **Step 4: 验证没有修改任何现有文件，只有新增文件属于 Antigravity support layer**
+- [x] **Step 1: 验证 Antigravity workflow 文件存在**
+- [x] **Step 2: 验证 Windows installer 生成的是一级全局 skill 目录**
+- [x] **Step 3: 验证没有新增 `.agent/rules`**
+- [x] **Step 4: 验证没有修改任何现有文件，只有新增文件属于 Antigravity support layer**
